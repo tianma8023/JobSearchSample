@@ -1,0 +1,10 @@
+query JobQuery($companySlug: String!, $jobSlug: String!) {
+    job(input: {companySlug: $companySlug, jobSlug: $jobSlug}) {
+        title
+        description
+        company {
+            logoUrl
+            name
+        }
+    }
+}

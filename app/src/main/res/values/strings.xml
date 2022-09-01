@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">JobSearch</string>
+
+    <string name="action_reset_first_launch">Reset first launch</string>
+    <string name="splash_screen_tip">This a splash screen page!</string>
+
+    <string name="search">Search Jobs</string>
+    <string name="jobTypeInputHint">Job type (Developer etc.)</string>
+    <string name="job_search">Job Search</string>
+    <string name="job_search_list">Job Search List</string>
+    <string name="job_company_logo">Job company logo</string>
+    <string name="clear_search_history">clear search records</string>
+    <string name="delete_all_search_history_dialog_message">Are you sure to clear all search records?</string>
+    <string name="delete_all_search_history_dialog_title">Clear Search Records</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+</resources>

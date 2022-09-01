@@ -1,0 +1,10 @@
+query JobList($type: String!) {
+    jobs(input: {type: $type}) {
+        title
+        slug
+        company {
+            name
+            slug
+        }
+    }
+}

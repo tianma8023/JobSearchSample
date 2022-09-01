@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/jobSearchFragment">
+
+    <fragment
+        android:id="@+id/jobSearchFragment"
+        android:name="com.example.jobsearch.ui.main.search.JobSearchFragment"
+        android:label="@string/job_search"
+        tools:layout="@layout/fragment_job_search">
+        <action
+            android:id="@+id/openJobSearchList"
+            app:destination="@id/jobSearchListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/jobSearchListFragment"
+        android:name="com.example.jobsearch.ui.main.list.JobSearchListFragment"
+        android:label="@string/job_search_list"
+        tools:layout="@layout/fragment_job_search_list">
+        <action
+            android:id="@+id/openJobDetails"
+            app:destination="@id/jobDetailsFragment" />
+        <argument
+            android:name="jobType"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/jobDetailsFragment"
+        android:name="com.example.jobsearch.ui.main.details.JobDetailsFragment"
+        tools:layout="@layout/fragment_job_details">
+        <argument
+            android:name="companySlug"
+            app:argType="string" />
+        <argument
+            android:name="jobSlug"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
